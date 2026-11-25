@@ -20,7 +20,7 @@
       <p class="eyebrow" data-i18n="welcomeEyebrow">A QUIET CORNER OF THE INTERNET</p>
       <h1 id="welcomeTitle" data-i18n="welcomeTitle">Before you enter,<br><em>take a breath.</em></h1>
       <p class="welcome-copy" data-i18n="welcomeCopy">Somewhere here, a song might be waiting for you. Search your name, leave a song for someone, or simply wander.</p>
-      <button class="button button-dark welcome-enter" id="enterArchive" type="button" data-i18n="welcomeButton">Enter the archive <span>↗</span></button>
+      <button class="button button-dark welcome-enter" id="enterArchive" type="button" data-i18n="welcomeButton">Enter the archive <span>↗︎</span></button>
       <button class="welcome-language" id="welcomeLanguage" type="button">عربي</button>
       <p class="welcome-foot">FOR EVERYTHING YOU COULDN'T SAY.</p>
     </div>
@@ -47,8 +47,8 @@
         <h1 data-i18n="heroTitle">Some songs were never meant to stay <em>unsent.</em></h1>
         <p class="hero-description" data-i18n="heroDescription">Somewhere in this archive, someone might have left a song for you. You just don't know it yet.</p>
         <div class="hero-buttons">
-          <a href="#search" class="button button-paper" data-i18n="findButton">Find what was left for you <span>↗</span></a>
-          <a href="#how" class="text-link" data-i18n="howLink">How it works <span>↓</span></a>
+          <a href="#search" class="button button-paper" data-i18n="findButton">Find what was left for you <span>↗︎</span></a>
+          <a href="#how" class="text-link" data-i18n="howLink">How it works <span>↓︎</span></a>
         </div>
         <div class="hero-footnote"><span class="tiny-star ornament-star" aria-hidden="true"></span><span data-i18n="heroNote">No profiles. No pressure. Just words and music.</span></div>
       </div>
@@ -83,7 +83,7 @@
         <div class="search-input-row">
           <span class="search-icon" aria-hidden="true"></span>
           <input id="recipientSearch" name="name" type="text" autocomplete="off" maxlength="70" placeholder="Enter your name..." required>
-          <button type="submit" data-i18n="searchButton">Search <span>↗</span></button>
+          <button type="submit" data-i18n="searchButton">Search <span>↗︎</span></button>
         </div>
         <p class="search-hint" data-i18n="searchHint">Enter the name exactly as the sender wrote it.</p>
         <p class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></p>
@@ -108,7 +108,7 @@
           <p class="eyebrow light"><span class="eyebrow-line"></span><span data-i18n="sendEyebrow">LEAVE A TRACE</span></p>
           <h2 data-i18n="sendTitle">There is something<br>you never <em>said?</em></h2>
           <p data-i18n="sendDescription">Leave a song. Write a message. Let it find its way to someone.</p>
-          <a class="button button-outline" href="#sendFormSection" data-i18n="sendButton">Leave a song for someone <span>↗</span></a>
+          <a class="button button-outline" href="#sendFormSection" data-i18n="sendButton">Leave a song for someone <span>↗︎</span></a>
         </div>
         <div class="send-card-art">
           <div class="postcard">
@@ -146,7 +146,7 @@
         </div>
        
         <p class="privacy-note" data-i18n="privacyNote">Your name, if provided, is stored separately and is not shown publicly. Do not include private or sensitive information in your message.</p>
-        <button class="button button-dark submit-button" type="submit" id="submitMessage" data-i18n="submitButton">Leave it in the archive <span>↗</span></button>
+        <button class="button button-dark submit-button" type="submit" id="submitMessage" data-i18n="submitButton">Leave it in the archive <span>↗︎</span></button>
         <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
       </form>
     </section>
@@ -154,7 +154,7 @@
     <section class="archive-section section-shell" id="archive">
       <div class="section-title-row">
         <div><p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="archiveEyebrow">A FEW THINGS LEFT BEHIND</span></p><h2 data-i18n="archiveTitle">From the <em>archive.</em></h2></div>
-        <button class="text-link text-button" id="refreshArchive" type="button" data-i18n="refreshButton">Refresh archive ↻</button>
+        <button class="text-link text-button" id="refreshArchive" type="button" data-i18n="refreshButton">Refresh archive ↻︎</button>
       </div>
       <div class="archive-grid" id="archiveGrid">
         <p class="archive-empty" data-i18n="archiveLoading">The archive is waiting to be connected.</p>
@@ -177,7 +177,7 @@
 
     <section class="random-section section-shell" id="random">
       <div><p class="eyebrow light"><span class="eyebrow-line"></span><span data-i18n="randomEyebrow">A SMALL COINCIDENCE, MAYBE</span></p><h2 data-i18n="randomTitle">Let the archive<br><em>surprise you.</em></h2><p data-i18n="randomDescription">No searching. No expectations. Just one message, chosen at random.</p></div>
-      <button class="button button-outline" id="randomButton" type="button" data-i18n="randomButton">Surprise me <span>↗</span></button>
+      <button class="button button-outline" id="randomButton" type="button" data-i18n="randomButton">Surprise me <span>↗︎</span></button>
     </section>
 
     <section class="how-section section-shell" id="how">
@@ -200,7 +200,7 @@
         <p class="message-body" id="messageBody"></p>
         <p class="message-signature" id="messageSignature">— someone, somewhere</p>
       </div>
-      <div class="song-details"><p class="song-kicker" data-i18n="soundtrackLabel">THE SOUNDTRACK</p><h3 id="messageSong"></h3><p id="messageArtist"></p><div class="music-player" id="musicPlayer"></div><a class="external-song-link" id="externalSongLink" target="_blank" rel="noopener noreferrer" href="#" data-i18n="openSong">Open song on its platform ↗</a></div>
+      <div class="song-details"><p class="song-kicker" data-i18n="soundtrackLabel">THE SOUNDTRACK</p><h3 id="messageSong"></h3><p id="messageArtist"></p><div class="music-player" id="musicPlayer"></div><a class="external-song-link" id="externalSongLink" target="_blank" rel="noopener noreferrer" href="#" data-i18n="openSong">Open song on its platform ↗︎</a></div>
     </div>
   </div>
 
