@@ -221,7 +221,7 @@ $("sendForm").addEventListener("submit", async event => {
       p_message: message,
       p_mood: values.mood || "unspoken",
       p_sender_name: senderName || null,
-      p_sender_private: values.privateIdentity === "on"
+      p_sender_private: true
     });
     if (error) throw error;
     form.reset();
