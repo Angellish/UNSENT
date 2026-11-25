@@ -35,3 +35,126 @@ html[dir="rtl"] body{text-align:right}html[dir="rtl"] .eyebrow{letter-spacing:0}
 .site-footer > span {
     color: #482727;
 }
+
+/* UNSENT visual refinements — Mocha Beige + accessible contrast */
+:root {
+  --muted: #665345;
+}
+
+/* Small text on the Mocha Beige background */
+.eyebrow:not(.light),
+.hero-description,
+.hero-footnote,
+.hero-index,
+.art-caption,
+.search-side-note,
+.search-hint,
+.result-count,
+.archive-empty,
+.form-intro,
+.search-box label,
+.field > span,
+.platform-note,
+.privacy-note,
+.discover-intro > p:last-child,
+.mood-card span,
+.mood-card small,
+.how-grid p,
+.site-footer p,
+.site-footer > span {
+  color: #594235;
+}
+
+/* Keep muted text on light paper surfaces readable too */
+.search-hint,
+.archive-empty,
+.form-intro,
+.platform-note,
+.privacy-note,
+.discover-intro > p:last-child,
+.how-grid p,
+.site-footer p {
+  color: #594235;
+}
+
+/* Drawn ornament: consistent on iPhone Safari and desktop */
+.ornament-star {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  flex: 0 0 13px;
+  background: var(--rose);
+  clip-path: polygon(
+    50% 0%, 61% 35%, 98% 20%, 72% 50%,
+    98% 80%, 61% 65%, 50% 100%, 39% 65%,
+    2% 80%, 28% 50%, 2% 20%, 39% 35%
+  );
+  vertical-align: middle;
+}
+.tiny-star { font-size: 0; }
+.side-star { margin-left: 8px; width: 11px; height: 11px; }
+.postcard-star { width: 9px; height: 9px; background: #9a8065; }
+
+/* CSS magnifying glass instead of a Unicode symbol */
+.search-icon {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  flex: 0 0 25px;
+  font-size: 0;
+  transform: none;
+}
+.search-icon::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border: 1.6px solid #80684f;
+  border-radius: 50%;
+  left: 2px;
+  top: 2px;
+}
+.search-icon::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 1.6px;
+  background: #80684f;
+  transform: rotate(48deg);
+  transform-origin: left center;
+  left: 15px;
+  top: 16px;
+}
+
+/* Cassette reels drawn as CSS shapes, avoiding emoji/system glyph fallback */
+.tape-reels {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  height: 12px;
+}
+.tape-reels i {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 1.5px solid #685a47;
+  border-radius: 50%;
+  position: relative;
+}
+.tape-reels i::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border: 1px solid #685a47;
+  border-radius: 50%;
+  left: 2px;
+  top: 2px;
+}
+.tape-reels b {
+  display: block;
+  width: 23px;
+  height: 1.5px;
+  background: #685a47;
+}

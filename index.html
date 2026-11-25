@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#211d19">
+  <meta name="theme-color" content="#B39A7C">
   <meta name="description" content="UNSENT — a shared archive of songs and messages left for someone.">
   <title>UNSENT — For everything you couldn't say.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,7 +50,7 @@
           <a href="#search" class="button button-paper" data-i18n="findButton">Find what was left for you <span>↗</span></a>
           <a href="#how" class="text-link" data-i18n="howLink">How it works <span>↓</span></a>
         </div>
-        <div class="hero-footnote"><span class="tiny-star">✳︎</span><span data-i18n="heroNote">No profiles. No pressure. Just words and music.</span></div>
+        <div class="hero-footnote"><span class="tiny-star ornament-star" aria-hidden="true"></span><span data-i18n="heroNote">No profiles. No pressure. Just words and music.</span></div>
       </div>
       <div class="hero-art" aria-label="A vintage letter and cassette illustration">
         <div class="art-stamp">THE<br>UNSENT<br>ARCHIVE</div>
@@ -66,7 +66,7 @@
         <div class="cassette">
           <div class="cassette-label"><span>side A</span><b>for the feeling</b><span>60 min</span></div>
           <div class="cassette-window"><i></i><i></i><div class="tape-line"></div></div>
-          <div class="cassette-bottom"><span>UNSENT AUDIO</span><span>◉ ━━━ ◉</span></div>
+          <div class="cassette-bottom"><span>UNSENT AUDIO</span><span class="tape-reels" aria-hidden="true"><i></i><b></b><i></i></span></div>
         </div>
         <span class="art-caption">A PLACE FOR THE THINGS WE NEVER SENT.</span>
       </div>
@@ -81,14 +81,14 @@
       <form class="search-box" id="searchForm">
         <label for="recipientSearch" data-i18n="searchLabel">SEARCH THE ARCHIVE</label>
         <div class="search-input-row">
-          <span class="search-icon">⌕</span>
+          <span class="search-icon" aria-hidden="true"></span>
           <input id="recipientSearch" name="name" type="text" autocomplete="off" maxlength="70" placeholder="Enter your name..." required>
           <button type="submit" data-i18n="searchButton">Search <span>↗</span></button>
         </div>
         <p class="search-hint" data-i18n="searchHint">Enter the name exactly as the sender wrote it.</p>
         <p class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></p>
       </form>
-      <div class="search-side-note">YOU NEVER KNOW<br>WHAT YOU MIGHT FIND <span>✳︎</span></div>
+      <div class="search-side-note">YOU NEVER KNOW<br>WHAT YOU MIGHT FIND <span class="ornament-star side-star" aria-hidden="true"></span></div>
     </section>
 
     <section class="results-section section-shell hidden" id="resultsSection">
@@ -112,7 +112,7 @@
         </div>
         <div class="send-card-art">
           <div class="postcard">
-            <div class="postcard-top"><span>UNSENT POST</span><span>✳</span></div>
+            <div class="postcard-top"><span>UNSENT POST</span><span class="ornament-star postcard-star" aria-hidden="true"></span></div>
             <div class="postcard-lines"></div>
             <p data-i18n="postcardText">If this song<br>finds you,<br>it was meant to.</p>
             <div class="postcard-stamp">U</div>
