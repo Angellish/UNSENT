@@ -132,10 +132,10 @@
       <form class="send-form" id="sendForm">
         <div class="form-grid">
           <label class="field field-wide"><span data-i18n="recipientLabel">WHO IS THIS FOR? *</span><input name="recipient" id="recipientName" maxlength="70" required placeholder="Recipient's name"></label>
-          <label class="field"><span data-i18n="songLabel">SONG TITLE *</span><input id="songTitle" name="songTitle" maxlength="120" required placeholder="Song title"></label>
-          <label class="field"><span data-i18n="artistLabel">ARTIST / CHANNEL *</span><input id="songArtist" name="artist" maxlength="100" required placeholder="Artist name"></label>
+          <input id="songTitle" name="songTitle" type="hidden">
+          <input id="songArtist" name="artist" type="hidden">
           <label class="field field-wide"><span data-i18n="urlLabel">SONG LINK *</span><input name="songUrl" id="songUrl" type="url" maxlength="500" required placeholder="Paste a YouTube, YouTube Music or Spotify link"></label>
-          <div class="platform-note field-wide" id="platformNote" data-i18n="platformNote" role="status" aria-live="polite">Paste a YouTube, YouTube Music or Spotify link. We will fill in the song details when available.</div>
+          <div class="platform-note field-wide" id="platformNote" data-i18n="platformNote" role="status" aria-live="polite">Paste a YouTube, YouTube Music or Spotify link. Song details will be added automatically.</div>
           <label class="field field-wide"><span data-i18n="messageLabel">YOUR MESSAGE *</span><textarea name="message" rows="5" maxlength="1200" required placeholder="Write what you couldn't say..."></textarea></label>
           <label class="field"><span data-i18n="moodLabel">A FEELING (OPTIONAL)</span>
             <select name="mood">

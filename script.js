@@ -5,7 +5,7 @@ const translations = {
     eyebrow:"AN ANONYMOUS MUSIC & MESSAGE ARCHIVE",heroTitle:'Some songs were never meant to stay <em>unsent.</em>',heroDescription:"Somewhere in this archive, someone might have left a song for you. You just don't know it yet.",findButton:'Find what was left for you <span>↗︎</span>',howLink:'How it works <span>↓︎</span>',heroNote:"No profiles. No pressure. Just words and music.",letterGreeting:"To whoever<br>needs this song,",letterLine:"Some feelings are easier<br>to leave between the lines.",
     searchEyebrow:"FIRST, A LITTLE CURIOSITY",searchTitle:'Did someone leave<br><em>something for you?</em>',searchLabel:"SEARCH THE ARCHIVE",searchButton:'Search <span>↗︎</span>',searchHint:"Enter the name exactly as the sender wrote it.",resultsEyebrow:"SOMETHING WAS LEFT HERE",
     sendEyebrow:"LEAVE A TRACE",sendTitle:'There is something<br>you never <em>said?</em>',sendDescription:"Leave a song. Write a message. Let it find its way to someone.",sendButton:'Leave a song for someone <span>↗︎</span>',postcardText:'If this song<br>finds you,<br>it was meant to.',
-    formEyebrow:"A LETTER WITH A SOUNDTRACK",formTitle:'Leave it <em>here.</em>',formIntro:"The recipient's name is required. That's how your song finds its way to them.",recipientLabel:"WHO IS THIS FOR? *",songLabel:"SONG TITLE *",artistLabel:"ARTIST / CHANNEL *",urlLabel:"SONG LINK *",platformNote:"Paste a YouTube, YouTube Music or Spotify link. We will fill in the song details when available.",metadataLoading:"Looking up the song details…",metadataYoutube:"Song title and channel filled in. Please check the details.",metadataSpotify:"Song title filled in. Please add the artist name.",metadataPartial:"Song title found. Please check or complete the artist name.",metadataFailed:"We could not read this link automatically. Please enter the song details manually.",messageLabel:"YOUR MESSAGE *",moodLabel:"A FEELING (OPTIONAL)",senderLabel:"YOUR NAME (OPTIONAL)",privacyText:"Keep my identity private from visitors.",privacyNote:"Your name will not be shown to other visitors. It is kept private and can only be accessed by the archive owner.",submitButton:'Leave it in the archive <span>↗︎</span>',
+    formEyebrow:"A LETTER WITH A SOUNDTRACK",formTitle:'Leave it <em>here.</em>',formIntro:"The recipient's name is required. That's how your song finds its way to them.",recipientLabel:"WHO IS THIS FOR? *",urlLabel:"SONG LINK *",platformNote:"Paste a YouTube, YouTube Music or Spotify link. Song details will be added automatically.",metadataLoading:"Adding the song details…",metadataDone:"Song details added.",metadataFailed:"We could not identify the song automatically. You can still send the link.",messageLabel:"YOUR MESSAGE *",moodLabel:"A FEELING (OPTIONAL)",senderLabel:"YOUR NAME (OPTIONAL)",privacyText:"Keep my identity private from visitors.",privacyNote:"Your name will not be shown to other visitors. It is kept private and can only be accessed by the archive owner.",submitButton:'Leave it in the archive <span>↗︎</span>',
     archiveEyebrow:"A FEW THINGS LEFT BEHIND",archiveTitle:'From the <em>archive.</em>',refreshButton:"Refresh archive ↻︎",archiveLoading:"Loading the archive…",archiveEmpty:"No public letters yet. You could leave the first one.",discoverEyebrow:"NOT EVERYTHING NEEDS A NAME",discoverTitle:'Find a <em>feeling.</em>',discoverDescription:"Explore the archive by the feeling you're carrying today.",mood1:"The ones we miss",mood1desc:"For someone you wish was here.",mood2:"Things never said",mood2desc:"Words that stayed inside.",mood3:"A little gratitude",mood3desc:"For someone who mattered.",mood4:"Memories of home",mood4desc:"Places we carry with us.",randomEyebrow:"A SMALL COINCIDENCE, MAYBE",randomTitle:'Let the archive<br><em>surprise you.</em>',randomDescription:"No searching. No expectations. Just one message, chosen at random.",randomButton:'Surprise me <span>↗︎</span>',howEyebrow:"NOTHING COMPLICATED",howTitle:'A little note.<br><em>A little music.</em>',step1:"Leave a song",step1desc:"Choose someone, add a song, and write what you couldn't say.",step2:"Let it find them",step2desc:"Your note joins the archive, quietly waiting to be found.",step3:"Open the letter",step3desc:"Someone searches their name and discovers what was left.",letterEyebrow:"A LETTER FROM THE ARCHIVE",soundtrackLabel:"THE SOUNDTRACK",openSong:"Open song on its platform ↗︎",footerLine:"For everything you couldn't say.",
     needConfig:"The shared archive is not connected yet. Finish the Supabase setup in the project guide, then try again.",searching:"Searching the archive…",noResults:"No letters found for this name yet. Check the spelling, or leave a song for someone.",searchError:"Something went wrong while searching. Please try again.",sending:"Saving your letter…",sent:"Your letter has joined the archive. Thank you for leaving it here.",sendError:"Your letter could not be saved. Check the connection and try again.",badLink:"Please use a YouTube, YouTube Music, or Spotify link.",randomEmpty:"There are no public letters to surprise you with yet.",unknown:"Someone, somewhere",openLetter:"OPEN LETTER ↗︎",forLabel:"FOR",songFallback:"A song for you"
   },
@@ -15,7 +15,7 @@ const translations = {
     eyebrow:"أرشيف مجهول للأغاني والرسائل",heroTitle:'بعض الأغاني لم يكن مقدّراً لها أن تبقى <em>دون إرسال.</em>',heroDescription:"في مكان ما داخل هذا الأرشيف، ربما ترك شخصٌ أغنية لك. لكنك لا تعرف ذلك بعد.",findButton:'اكتشف ما تُرك لك <span>↗︎</span>',howLink:'كيف يعمل الموقع؟ <span>↓︎</span>',heroNote:"لا حسابات شخصية، لا ضغوط. فقط كلمات وموسيقى.",letterGreeting:"إلى من يحتاج<br>هذه الأغنية،",letterLine:"بعض المشاعر يسهل تركها<br>بين السطور.",
     searchEyebrow:"لنبدأ ببعض الفضول",searchTitle:'هل ترك أحدهم<br><em>شيئاً من أجلك؟</em>',searchLabel:"ابحث في الأرشيف",searchButton:'ابحث <span>↗︎</span>',searchHint:"اكتب الاسم بالطريقة التي قد يكتبه بها المرسل.",resultsEyebrow:"هناك شيء تُرك هنا",
     sendEyebrow:"اترك أثراً",sendTitle:'هل هناك شيء<br>لم <em>تقله؟</em>',sendDescription:"اترك أغنية، واكتب رسالة، ودعها تصل إلى شخص ما.",sendButton:'اترك أغنية لشخص ما <span>↗︎</span>',postcardText:'إن وصلت إليك<br>هذه الأغنية،<br>فربما كان ذلك لسبب.',
-    formEyebrow:"رسالة ومعها موسيقى",formTitle:'اتركها <em>هنا.</em>',formIntro:"اسم الشخص المستلم إجباري. بهذه الطريقة تستطيع الأغنية أن تصل إليه.",recipientLabel:"لمن هذا الإهداء؟ *",songLabel:"اسم الأغنية *",artistLabel:"الفنان أو القناة *",urlLabel:"رابط الأغنية *",platformNote:"الصق رابط YouTube أو YouTube Music أو Spotify، وسنحاول تعبئة معلومات الأغنية تلقائياً.",metadataLoading:"جارٍ التعرّف على الأغنية…",metadataYoutube:"تمت تعبئة اسم الأغنية والقناة. يُرجى مراجعة المعلومات.",metadataSpotify:"تمت تعبئة اسم الأغنية. أضف اسم الفنان.",metadataPartial:"عُثر على اسم الأغنية. راجع اسم الفنان أو أكمله.",metadataFailed:"لم نتمكن من قراءة الرابط تلقائياً. يرجى إدخال معلومات الأغنية يدوياً.",messageLabel:"رسالتك *",moodLabel:"الشعور (اختياري)",senderLabel:"اسمك (اختياري)",privacyText:"أبقِ هويتي مخفية عن الزوار.",privacyNote:"لن يظهر اسمك للزوار أو مع رسالتك. يبقى الاسم خاصاً ولا يمكن الاطلاع عليه إلا من قِبل صاحبة الأرشيف.",submitButton:'اتركها في الأرشيف <span>↗︎</span>',
+    formEyebrow:"رسالة ومعها موسيقى",formTitle:'اتركها <em>هنا.</em>',formIntro:"اسم الشخص المستلم إجباري. بهذه الطريقة تستطيع الأغنية أن تصل إليه.",recipientLabel:"لمن هذا الإهداء؟ *",urlLabel:"رابط الأغنية *",platformNote:"الصق رابط YouTube أو YouTube Music أو Spotify، وسنضيف معلومات الأغنية تلقائياً.",metadataLoading:"جارٍ إضافة معلومات الأغنية…",metadataDone:"تمت إضافة معلومات الأغنية.",metadataFailed:"لم نتمكن من التعرّف على الأغنية تلقائياً، لكن يمكنك إرسال الرابط عادي.",messageLabel:"رسالتك *",moodLabel:"الشعور (اختياري)",senderLabel:"اسمك (اختياري)",privacyText:"أبقِ هويتي مخفية عن الزوار.",privacyNote:"لن يظهر اسمك للزوار أو مع رسالتك. يبقى الاسم خاصاً ولا يمكن الاطلاع عليه إلا من قِبل صاحبة الأرشيف.",submitButton:'اتركها في الأرشيف <span>↗︎</span>',
     archiveEyebrow:"أشياء تُركت هنا",archiveTitle:'من <em>الأرشيف.</em>',refreshButton:"تحديث الأرشيف ↻︎",archiveLoading:"جارٍ تحميل الأرشيف…",archiveEmpty:"لا توجد رسائل منشورة بعد. ربما تكون أول من يترك واحدة.",discoverEyebrow:"ليس كل شيء يحتاج إلى اسم",discoverTitle:'ابحث عن <em>شعور.</em>',discoverDescription:"استكشف الأرشيف بحسب الشعور الذي تحمله اليوم.",mood1:"لمن نفتقدهم",mood1desc:"لشخص تتمنى لو كان هنا.",mood2:"كلمات لم تُقال",mood2desc:"كلمات بقيت في الداخل.",mood3:"شيء من الامتنان",mood3desc:"لشخص كان له أثر.",mood4:"ذكريات الوطن",mood4desc:"أماكن نحملها بداخلنا.",randomEyebrow:"ربما تكون مصادفة جميلة",randomTitle:'دع الأرشيف<br><em>يفاجئك.</em>',randomDescription:"لا بحث ولا توقعات. رسالة واحدة يختارها الأرشيف عشوائياً.",randomButton:'فاجئني <span>↗︎</span>',howEyebrow:"الأمر بسيط",howTitle:'رسالة صغيرة.<br><em>وموسيقى.</em>',step1:"اترك أغنية",step1desc:"اختر شخصاً، وأضف أغنية، واكتب ما لم تستطع قوله.",step2:"دعها تصل إليه",step2desc:"تنضم رسالتك إلى الأرشيف وتنتظر بهدوء من يجدها.",step3:"افتح الرسالة",step3desc:"يبحث شخص عن اسمه ويكتشف ما تُرك له.",letterEyebrow:"رسالة من الأرشيف",soundtrackLabel:"الأغنية المرافقة",openSong:"افتح الأغنية على منصتها ↗︎",footerLine:"لكل ما لم تستطع قوله.",
     needConfig:"الأرشيف المشترك غير مربوط بعد. أكمِل إعداد Supabase الموجود في دليل المشروع ثم جرّب مجدداً.",searching:"جارٍ البحث في الأرشيف…",noResults:"لم نعثر على رسائل لهذا الاسم بعد. تأكد من كتابته أو اترك أغنية لشخص ما.",searchError:"حدث خطأ أثناء البحث. حاول مرة أخرى.",sending:"جارٍ حفظ رسالتك…",sent:"وصلت رسالتك إلى الأرشيف. شكراً لأنك تركتها هنا.",sendError:"لم نتمكن من حفظ الرسالة. تحقق من الاتصال وحاول مجدداً.",badLink:"استخدم رابطاً من YouTube أو YouTube Music أو Spotify.",randomEmpty:"لا توجد رسائل منشورة لنفاجئك بها بعد.",unknown:"شخص ما، في مكان ما",openLetter:"افتح الرسالة ↗︎",forLabel:"إلى",songFallback:"أغنية لك"
   }
@@ -128,40 +128,36 @@ async function lookupSongDetails() {
   const urlValue = urlField.value.trim();
   const version = ++metadataLookupVersion;
 
-  if (!urlValue) return;
+  if (!urlValue) return false;
   const music = detectMusic(urlValue);
-  if (!music) return;
+  if (!music) return false;
 
   status($("platformNote"), t("metadataLoading"));
 
   try {
     const { metadata } = await fetchSongMetadata(urlValue);
-    if (version !== metadataLookupVersion || urlField.value.trim() !== urlValue) return;
+    if (version !== metadataLookupVersion || urlField.value.trim() !== urlValue) return false;
 
     const title = String(metadata.title || "").trim();
-    // YouTube oEmbed's author_name is the channel/uploader, not guaranteed to be the recording artist.
-    // Spotify oEmbed returns the track title but does not provide a track artist field.
-    const author = music.platform === "Spotify" ? "" : String(metadata.author_name || "").trim();
+    let author = String(metadata.author_name || "").trim();
 
-    setAutoField(titleField, title);
-    setAutoField(artistField, author);
-
-    if (music.platform === "Spotify" && title) {
-      status($("platformNote"), t("metadataSpotify"), "success");
-    } else if (title && author) {
-      status($("platformNote"), t("metadataYoutube"), "success");
-    } else if (title) {
-      status($("platformNote"), t("metadataPartial"), "success");
-    } else {
-      status($("platformNote"), t("metadataFailed"), "error");
-    }
+    // Some providers identify themselves as the author instead of the recording artist.
+    if (!author || /^(spotify|youtube)$/i.test(author)) author = "";
+    // Metadata is optional: save whatever the provider actually returns.
+    titleField.value = title.slice(0, 120);
+    artistField.value = author.slice(0, 100);
+    if (title || author) status($("platformNote"), t("metadataDone"), "success");
+    else status($("platformNote"), t("metadataFailed"));
+    return Boolean(title || author);
   } catch (error) {
-    if (version !== metadataLookupVersion) return;
+    if (version !== metadataLookupVersion) return false;
     console.info("UNSENT song metadata lookup unavailable:", error);
-    status($("platformNote"), t("metadataFailed"), "error");
+    titleField.value = "";
+    artistField.value = "";
+    status($("platformNote"), t("metadataFailed"));
+    return false;
   }
 }
-
 function scheduleSongLookup() {
   clearTimeout(metadataLookupTimer);
   metadataLookupTimer = setTimeout(lookupSongDetails, 500);
@@ -239,17 +235,46 @@ async function searchMessages(name) {
   if (error) throw error;
   return data || [];
 }
+async function fetchAllPublicMessages(mood = null) {
+  const pageSize = 500;
+  const allRows = [];
+  let from = 0;
+
+  while (true) {
+    let query = db.from("messages")
+      .select("id,recipient_name,song_title,artist,song_url,message,mood,created_at")
+      .eq("is_approved", true)
+      .order("created_at", { ascending: false })
+      .range(from, from + pageSize - 1);
+
+    if (mood) query = query.eq("mood", mood);
+
+    const { data, error } = await query;
+    if (error) throw error;
+
+    const page = data || [];
+    allRows.push(...page);
+    if (page.length < pageSize) break;
+    from += pageSize;
+  }
+
+  return allRows;
+}
+
 async function loadArchive(mood = null) {
   const grid = $("archiveGrid");
   grid.innerHTML = "";
   if (!db) {
     const p = document.createElement("p"); p.className = "archive-empty"; p.textContent = t("needConfig"); grid.append(p); return;
   }
-  let query = db.from("messages").select("id,recipient_name,song_title,artist,song_url,message,mood,created_at").eq("is_approved",true).order("created_at",{ascending:false}).limit(6);
-  if (mood) query = query.eq("mood", mood);
-  const {data,error} = await query;
-  if (error) { const p=document.createElement("p");p.className="archive-empty";p.textContent=t("searchError");grid.append(p);return; }
-  if (!data?.length) { const p=document.createElement("p");p.className="archive-empty";p.textContent=t("archiveEmpty");grid.append(p);return; }
+  let data;
+  try {
+    data = await fetchAllPublicMessages(mood);
+  } catch (error) {
+    console.error(error);
+    const p=document.createElement("p");p.className="archive-empty";p.textContent=t("searchError");grid.append(p);return;
+  }
+  if (!data.length) { const p=document.createElement("p");p.className="archive-empty";p.textContent=t("archiveEmpty");grid.append(p);return; }
   data.forEach(item => grid.append(createCard(item)));
 }
 function showResults(items, name) {
@@ -291,6 +316,10 @@ $("songUrl").addEventListener("paste", () => setTimeout(lookupSongDetails, 0));
 $("sendForm").addEventListener("submit", async event => {
   event.preventDefault();
   const form = event.currentTarget;
+  const songLink = $("songUrl").value.trim();
+  if (!detectMusic(songLink)) { status($("formStatus"), t("badLink"), "error"); $("songUrl").focus(); return; }
+  // Try metadata lookup, but never block sending when the provider cannot identify the track.
+  await lookupSongDetails();
   const values = Object.fromEntries(new FormData(form).entries());
   const recipient = String(values.recipient || "").trim();
   const songTitle = String(values.songTitle || "").trim();
@@ -307,8 +336,8 @@ $("sendForm").addEventListener("submit", async event => {
   try {
     const {error} = await db.rpc("submit_unsent_message", {
       p_recipient_name: recipient,
-      p_song_title: songTitle,
-      p_artist: artist,
+      p_song_title: songTitle || null,
+      p_artist: artist || null,
       p_song_url: music.url,
       p_message: message,
       p_mood: values.mood || "unspoken",
@@ -331,8 +360,10 @@ $("sendForm").addEventListener("submit", async event => {
 });
 $("randomButton").addEventListener("click", async () => {
   if (!db) { status($("searchFeedback"), t("needConfig"), "error"); $("search").scrollIntoView({behavior:"smooth"}); return; }
-  const {data,error} = await db.from("messages").select("id,recipient_name,song_title,artist,song_url,message,mood,created_at").eq("is_approved",true).limit(100);
-  if (error || !data?.length) { status($("searchFeedback"), t("randomEmpty"), "error"); $("search").scrollIntoView({behavior:"smooth"}); return; }
+  let data;
+  try { data = await fetchAllPublicMessages(); }
+  catch (error) { console.error(error); status($("searchFeedback"), t("searchError"), "error"); return; }
+  if (!data.length) { status($("searchFeedback"), t("randomEmpty"), "error"); $("search").scrollIntoView({behavior:"smooth"}); return; }
   openMessage(data[Math.floor(Math.random() * data.length)]);
 });
 $("refreshArchive").addEventListener("click", () => loadArchive());
