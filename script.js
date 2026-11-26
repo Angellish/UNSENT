@@ -106,7 +106,7 @@ function renderPlayer(songUrl) {
   $("externalSongLink").href = songUrl;
 }
 function openMessage(item) {
-  $("messageRecipient").textContent = `${language === "ar" ? "إلى" : "Dear"} ${item.recipient_name},`;
+$("messageRecipient").textContent = item.recipient_name;
   $("messageBody").textContent = item.message;
   $("messageSong").textContent = item.song_title || t("songFallback");
   $("messageArtist").textContent = item.artist || "";
