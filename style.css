@@ -160,3 +160,16 @@ button span,
 a span {
   font-variant-emoji: text;
 }
+
+
+/* Song-link metadata lookup feedback */
+.platform-note {
+  line-height: 1.6;
+  transition: color .2s ease;
+}
+.platform-note.success {
+  color: #52664b;
+}
+.platform-note.error {
+  color: #8a5147;
+}
